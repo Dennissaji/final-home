@@ -6,6 +6,9 @@
     position: absolute;
     top:175px;
     left:30%;
+    display: inline-flex;
+    flex-wrap: wrap;
+   
 }
 .child{
   width:30%;
@@ -14,5 +17,53 @@
   border-color: blue;
   margin:10px;
   margin-top: 25px;
-  display:inline-block;
+  display:inline-flex;
+  flex-wrap: wrap;
 }
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-image-user{
+  min-width: 100%;
+  height: 60%;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-color: black;
+  display:inline-flex;
+  background-color: aqua;
+  flex-wrap: nowrap;
+  float:left;
+  margin:0px;
+}
+.card-content{
+  display: block;
+  flex:inline-wrap;
+  position: relative;
+  height:40%;
+  min-width: 100%;
+  border: 1px solid;
+  border-color:black;
+  flex-wrap: wrap;
+  float:left;
+  clear:left;
+  margin: 0px;
+
+}
+
+/* Add some padding inside the card container */
