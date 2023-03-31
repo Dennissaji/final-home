@@ -1,8 +1,6 @@
 .cards{
     width:47vw;
     height: 47vh;
-    border: 1px solid;
-    border-color: blue;
     position: absolute;
     top:175px;
     left:30%;
@@ -13,12 +11,11 @@
 .child{
   width:26vh;
   height: 20vh;
-  border: 1px solid;
-  border-color: blue;
   margin:10px;
   margin-top: 25px;
   display:inline-flex;
   flex-wrap: wrap;
+  border: none;
   
 }
 .card {
@@ -106,20 +103,54 @@
 }
 .card-content-2{
   
-  text-align: center;
-  background-color: orange;
-  position: absolute;
-  
+  background-color: #FDCE74;
 }
 .cat-link{
   display:block
 }
+.card-3{
+  border: none;
+}
+.card-content-3{
+  background-color: #FDCE74;
+}
+.card-content-4{
+  background-color: #FDCE74;
+}
+.item-link{
+  display: block;
+}
+.image-summary{
+   padding: 5%;
+}
+.report-link
+{
+  justify-content: center;
+  text-align: center;
+  display: block;
+}
+.card-content-5{
+  background-color: #FDCE74;
+}
+
 @media (max-width:600px){
   .child{
     width: 100%;
     height: 50%;
   }
 }
+@media (min-width:1200px){
+  #card4{
+    margin-left: 13%;
+  }
+}
+@media(max-width:1128px)
+{
+  .child{
+     width:100vw;
+  }
+}
+
 
 
 /* Add some padding inside the card container */
