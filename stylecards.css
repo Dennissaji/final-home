@@ -1,6 +1,6 @@
 .cards{
-    width:47%;
-    height: 47%;
+    width:47vw;
+    height: 47vh;
     border: 1px solid;
     border-color: blue;
     position: absolute;
@@ -11,14 +11,15 @@
    
 }
 .child{
-  width:30%;
-  height: 40%;
+  width:26vh;
+  height: 20vh;
   border: 1px solid;
   border-color: blue;
   margin:10px;
   margin-top: 25px;
   display:inline-flex;
   flex-wrap: wrap;
+  
 }
 .card {
   /* Add shadows to create the "card" effect */
@@ -32,6 +33,7 @@
   display: inline-flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -46,7 +48,7 @@
   border: 1px solid;
   border-color: black;
   display:inline-flex;
-  background-color: aqua;
+  background-color:white;
   flex-wrap: nowrap;
   float:left;
   margin:0px;
@@ -57,13 +59,67 @@
   position: relative;
   height:40%;
   min-width: 100%;
-  border: 1px solid;
+  
   border-color:black;
+  background-color: #f0b106;
   flex-wrap: wrap;
   float:left;
   clear:left;
   margin: 0px;
+  border: none;
 
 }
+.card-image-user{
+  display:flex;
+  justify-content: center;
+  border: none;
+}
+.card-content-1{
+  
+  text-align: center;
+  background-color:#FDCE74;
+  
+}
+.user-link{
+  text-decoration: none;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: black;
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  
+}
+.child-1{
+ 
+  border: none;
+
+}
+.card-image-cat{
+  display:flex;
+  justify-content: center;
+  border: none;
+}
+.img-cat{
+  padding-top: 5%;
+}
+.card-content-2{
+  
+  text-align: center;
+  background-color: orange;
+  position: absolute;
+  
+}
+.cat-link{
+  display:block
+}
+@media (max-width:600px){
+  .child{
+    width: 100%;
+    height: 50%;
+  }
+}
+
 
 /* Add some padding inside the card container */
