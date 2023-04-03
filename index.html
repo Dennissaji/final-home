@@ -20,6 +20,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <!--css link -->
+  <link rel="stylesheet" href="styleuser.css">
   <link rel="stylesheet" href="css/stylecards.css">
 </head>
 
@@ -136,10 +137,77 @@
     <!-- ============= Home Section =============== -->
     <section class="home">
         <div class="toggle-sidebar">
-            <i class='bx bx-menu'></i>
+            <i class='bx bx-menu'></i>-
             <div class="text">Stock Management</div>
         </div>
     </section>
+
+    <!-- Message Icon -->
+     
+    <div class="msg-icon">
+        <a href="#"><img  class="msg-img"src="email.png"></a>
+    </div>
+
+
+
+
+
+
+    <!--Message Icon-->
+
+    <!-- IMAGE DROPDOWM START-->
+       <div class="img-container" >
+            <img src="user.png" class="user-pic" onclick="toggleMenu()">
+                <div class="sub-menu-wrap dropdown" id="subMenu">
+                    <div class="submenu dropdown-item">
+                        <div class="user-info">
+                            <img src="user.png" class="user-pic inside-user">
+                            <h3>USER</h3>
+                        </div>
+                       
+                        <div class="dropdown-item">
+                            <a href="#" class="sub-menu-link">
+                                <img src="images/profile.png">
+                                <p>Edit Profile</p>
+                                <span>></span>
+                            </a>
+                        </div>
+
+                        <div class="dropdown-item">
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/help.png">
+                            <p>Help and support</p>
+                            <span>></span>
+                        </a>
+                        </div>
+                        <div class="dropdown-item">
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+        </div> 
+
+        <script>
+            let subMenu=document.getElementById("subMenu")
+            function toggleMenu()
+            {
+                subMenu.classList.toggle("open-menu");
+            }
+        </script>
+
+
+
+
+
+
+
+
+    <!--IMAGE DROP DOWN ENDS-->
+
     <!--CARDS IN HOME PAGE-->
     <div class="cards">
    
