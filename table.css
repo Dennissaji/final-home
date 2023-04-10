@@ -34,8 +34,26 @@ button{
     font-size: 16px;
     cursor: pointer;
 }
+.search-container{
+    position: absolute;
+    top:70vh;
+    right: 16vw;
+
+}
 tr:hover{
     background-color: #ccffcc	;
+}
+.input-group{
+    display: inline-flexbox;
+}
+.item{
+    float:left
+}
+#search-button
+{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    height: 40px;
 }
 @media (max-width:500px)
 {

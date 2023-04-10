@@ -16,6 +16,7 @@
   display:inline-flex;
   flex-wrap: wrap;
   border: none;
+  background-image: radial-gradient( circle farthest-corner at 6.4% 9.8%,  rgba(88,242,174,1) 0%, rgba(0,130,240,1) 97.9% );
   
 }
 .card {
@@ -45,7 +46,7 @@
   border: 1px solid;
   border-color: black;
   display:inline-flex;
-  background-color:white;
+  padding: 2vh;
   flex-wrap: nowrap;
   float:left;
   margin:0px;
@@ -58,7 +59,7 @@
   min-width: 100%;
   
   border-color:black;
-  background-color: #f0b106;
+ 
   flex-wrap: wrap;
   float:left;
   clear:left;
@@ -74,18 +75,18 @@
 .card-content-1{
   
   text-align: center;
-  background-color:#FDCE74;
-  
+    
 }
 .user-link{
   text-decoration: none;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
-  color: black;
+  font-size:20px;
+  color:white;
   position: relative;
   display: inline-block;
   justify-content: center;
+  font-weight: bolder;
   
 }
 .child-1{
@@ -103,7 +104,7 @@
 }
 .card-content-2{
   
-  background-color: #FDCE74;
+  
 }
 .cat-link{
   display:block
@@ -111,12 +112,7 @@
 .card-3{
   border: none;
 }
-.card-content-3{
-  background-color: #FDCE74;
-}
-.card-content-4{
-  background-color: #FDCE74;
-}
+
 .item-link{
   display: block;
 }
@@ -129,9 +125,7 @@
   text-align: center;
   display: block;
 }
-.card-content-5{
-  background-color: #FDCE74;
-}
+
 
 @media (max-width:600px){
   .child{
