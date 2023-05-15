@@ -1,3 +1,17 @@
+<?php // checking user logged in or not
+ session_start();
+ $user=$_SESSION['user'];
+ if($user==true)
+ {
+
+ }
+ else
+ {
+  header('location:../login.php'); 
+ }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +39,7 @@
 </head>
 
 <body>
-    <div class="sidebar close">
+<div class="sidebar close">
         <!-- ========== Logo ============  -->
         <a href="#" class="logo-box">
             <i class='bx bxl-xing'></i>
@@ -37,7 +51,7 @@
             <!-- -------- Non Dropdown List Item ------- -->
             <li>
                 <div class="title">
-                    <a href="#" class="link">
+                    <a href="http://localhost/project/login/nav%20components/items/insert.php" class="link">
                         <i class='bx bx-grid-alt'></i>
                         <span class="name">Dashboard</span>
                     </a>
@@ -53,57 +67,34 @@
             <li class="dropdown">
                 <div class="title">
                     <a href="#" class="link">
-                        <i class='bx bx-collection'></i>
-                        <span class="name">Users</span>
-                    </a>
-                    <i class='bx bxs-chevron-down'></i>
-                </div>
-                <div class="submenu">
-                    <a href="#" class="link submenu-title">Category</a>
-                    <a href="#" class="link">HTML & CSS</a>
-                    <a href="#" class="link">JavaScript</a>
-                    <a href="#" class="link">PHP & MySQL</a>
-                </div>
-            </li>
-
-            <!-- -------- Dropdown List Item ------- -->
-            <li class="dropdown">
-                <div class="title">
-                    <a href="#" class="link">
                         <i class='bx bx-book-alt'></i>
                         <span class="name">Categories</span>
                     </a>
-                    <i class='bx bxs-chevron-down'></i>
-                </div>
-                <div class="submenu">
-                    <a href="#" class="link submenu-title">Posts</a>
-                    <a href="#" class="link">Web Design</a>
-                    <a href="#" class="link">Login Form</a>
-                    <a href="#" class="link">Card Design</a>
+                    
                 </div>
             </li>
 
             <!-- -------- Non Dropdown List Item ------- -->
-            <li>
+            <li class="dropdown">
                 <div class="title">
                     <a href="#" class="link">
-                        <i class='bx bx-line-chart'></i>
+                        <i class='bx bx-book-alt'></i>
                         <span class="name">Items</span>
                     </a>
-                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                    <i class='bx bxs-chevron-down'></i>
                 </div>
                 <div class="submenu">
-                    <a href="#" class="link submenu-title">Analytics</a>
-                    <!-- submenu links here  -->
+                    <a href="http://localhost/project/login/nav%20components/items/itemsdisplay.php" class="link">Display</a>
                 </div>
             </li>
+
 
             <!-- -------- Non Dropdown List Item ------- -->
             <li>
                 <div class="title">
                     <a href="#" class="link">
                         <i class='bx bx-pie-chart-alt-2'></i>
-                        <span class="name">purchase</span>
+                        <span class="name">Purschase Summary </span>
                     </a>
                     <!-- <i class='bx bxs-chevron-down'></i> -->
                 </div>
@@ -114,7 +105,16 @@
             </li>
 
             <!-- -------- Dropdown List Item ------- -->
-                
+            <li class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-extension'></i>
+                        <span class="name">Report</span>
+                    </a>
+                    
+                </div>
+            </li>
+
 
         </ul>
     </div>
@@ -127,18 +127,6 @@
         </div>
     </section>
 
-    <!-- Message Icon -->
-     
-    <div class="msg-icon">
-        <a href="#"><img  class="msg-img"src="email.png"></a>
-    </div>
-
-
-
-
-
-
-    <!--Message Icon-->
 
     <!-- IMAGE DROPDOWM START-->
        <div class="img-container" >
@@ -166,7 +154,7 @@
                         </a>
                         </div>
                         <div class="dropdown-item">
-                        <a href="#" class="sub-menu-link">
+                        <a href="http://localhost/project/login/logout.php" class="sub-menu-link">
                             <img src="images/logout.png">
                             <p>Logout</p>
                             <span>></span>
@@ -244,7 +232,7 @@
         <div class="child child-4" id="card4">
             <div class="card">
                 <div class="card-image-user">
-                    <img src="images/summary.png" class="image-summary">
+                    <img src="images/purchasing.png" class="image-summary" height="75px" width="75px">
                 </div>
                 <div class="card-content">
                     <div class="card-content-4">
@@ -273,7 +261,7 @@
      
          </div>
     <!-- Link JS -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script> 
 </body>
 
 </html>
