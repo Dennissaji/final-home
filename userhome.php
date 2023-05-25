@@ -1,14 +1,14 @@
 <?php // checking user logged in or not
  session_start();
- $user=$_SESSION['user'];
- if($user==true)
- {
+ $email=$_SESSION['email'];
 
- }
- else
- {
-  header('location:../login.php'); 
- }
+ include('../connect.php');
+ $sql="SELECT * FROM `users` where email='$email' ";
+ $res = $conn->query($sql);
+ $row = mysqli_fetch_assoc($res);
+ $imageloc=$row['image'];
+ echo $imageloc;
+
 
 ?>
 

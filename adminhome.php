@@ -1,14 +1,17 @@
 <?php // checking user logged in or not
  session_start();
- $user=$_SESSION['user'];
- if($user==true)
- {
+ $email=$_SESSION['email'];
 
- }
- else
- {
-  header('location:../login.php'); 
- }
+     include('../connect.php');
+     $sql="SELECT * FROM `users` where email='$email' ";
+     $res = $conn->query($sql);
+     $row = mysqli_fetch_assoc($res);
+     $imageloc=$row['image'];
+     echo $imageloc;
+    
+
+
+
 
 ?>
 
@@ -163,12 +166,12 @@
 
     <!-- IMAGE DROPDOWM START-->
        <div class="img-container" >
-            <img src="user.png" class="user-pic" onclick="toggleMenu()">
+            <?php echo '<img src=../'.$imageloc.' '; echo 'class="user-pic" onclick="toggleMenu()">'; ?>
                 <div class="sub-menu-wrap dropdown" id="subMenu">
                     <div class="submenu dropdown-item">
                         <div class="user-info">
-                            <img src="user.png" class="user-pic inside-user">
-                            <h3>USER</h3>
+                           <?php echo '<img src=../'.$imageloc.' ' ; echo'class="user-pic inside-user">
+                            <h3>USER</h3>'; ?>
                         </div>
                        
                         <div class="dropdown-item">
